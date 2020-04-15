@@ -6,14 +6,16 @@ LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="green"
 
 LABEL version="0.0.1"
-LABEL repository="https://github.com/kitabisa/sonarqube-action"
-LABEL homepage="https://kitabisa.github.io"
-LABEL maintainer="dwisiswant0"
+LABEL repository="https://github.com/journalio/sonarqube-action"
+LABEL homepage="https://journalio.github.io"
+LABEL maintainer="wesleyklop"
 
 RUN npm config set unsafe-perm true && \
   npm install --silent --save-dev -g typescript@3.5.2 && \
   npm config set unsafe-perm false
 ENV NODE_PATH "/usr/lib/node_modules/"
+
+RUN apk add jq
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

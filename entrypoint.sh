@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -26,4 +26,3 @@ sonar-scanner \
 	-Dsonar.tests=. \
 	-Dsonar.sourceEncoding=UTF-8 \
 	${SONAR_PASSWORD}
-

@@ -8,7 +8,7 @@ SonarQube is an open-source platform developed by SonarSource for continuous ins
 
 ## Requirements
 
-* Have SonarQube on server. [Install now](https://docs.sonarqube.org/latest/setup/install-server/) if it's not already the case!
+- Have SonarQube on server. [Install now](https://docs.sonarqube.org/latest/setup/install-server/) if it's not already the case!
 
 ## Usage
 
@@ -22,18 +22,18 @@ jobs:
     name: SonarQube Trigger
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@master
-      with:
-        host: ${{ secrets.SONARQUBE_HOST }}
-        login: ${{ secrets.SONARQUBE_TOKEN }}
+      - uses: actions/checkout@master
+      - name: SonarQube Scan
+        uses: journalio/sonarqube-action@master
+        with:
+          host: ${{ secrets.SONARQUBE_HOST }}
+          login: ${{ secrets.SONARQUBE_TOKEN }}
 ```
 
 You can change the analysis base directory by using the optional input `projectBaseDir` like this:
 
 ```yaml
-uses: kitabisa/sonarqube-action@master
+uses: journalio/sonarqube-action@master
 with:
   projectBaseDir: my-custom-directory
 ```
