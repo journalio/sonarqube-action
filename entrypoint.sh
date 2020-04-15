@@ -2,12 +2,6 @@
 
 set -e
 
-if [[ -z "${INPUT_PASSWORD}" ]]; then
-	SONAR_PASSWORD=""
-else
-	SONAR_PASSWORD="${INPUT_PASSWORD}"
-fi
-
 sonar-scanner \
 	-Dsonar.host.url=${INPUT_HOST} \
 	-Dsonar.projectKey=${INPUT_PROJECTKEY} \
