@@ -17,5 +17,4 @@ sonar-scanner \
 	-Dsonar.sources=. \
 	-Dsonar.tests=. \
 	-Dsonar.sourceEncoding=UTF-8 \
-	-Dsonar.scm.provider=git \
-	${SONAR_PASSWORD}
+	-Dsonar.scm.provider=git
