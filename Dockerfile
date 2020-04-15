@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Scan your code with SonarQube Scanner to
 LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="green"
 
-LABEL version="0.0.1"
+LABEL version="0.1.0"
 LABEL repository="https://github.com/journalio/sonarqube-action"
 LABEL homepage="https://journalio.github.io"
 LABEL maintainer="wesleyklop"
