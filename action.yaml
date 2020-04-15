@@ -11,6 +11,9 @@ inputs:
   host:
     description: 'SonarQube server URL'
     required: true
+  projectKey:
+    description: 'SonarQube project key'
+    required: true
   projectBaseDir:
     description: 'Set the sonar.projectBaseDir analysis property'
     required: false
